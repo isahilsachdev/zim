@@ -1,0 +1,93 @@
+@import '../../styles/colors.scss';
+
+:root{
+    --toastify-toast-min-height: auto;
+    --toastify-toast-width: auto;
+    --toastify-font-family: "Noto Sans";
+}
+
+.customToast .Toastify__toast-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Space between toasts */
+    padding: 16px; /* Padding around the container */
+}
+
+.customToast .Toastify__toast-body {
+    color: var(--Primary-Text, $Gray-100);
+    font-variant-numeric: lining-nums proportional-nums;
+    /* Small Regular */
+    font-family: "Noto sans" , sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    flex: 1 0 0;
+    margin:0;
+    padding: 0;
+    margin-right: 12px;
+    
+}
+
+.customToast .Toastify__close-button {
+    all: none;
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-left: 12px;
+  }
+
+.customToast .Toastify__toast-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.successToast {
+    border-radius: 8px;
+    border: 1px solid var(--Green---Simantic, $Green-Primary);
+    background: var(--Green-Secondary---Simantic, $Green-Secondary-Simantic);
+    
+}
+
+.successToast .Toastify__toast-icon {
+    border-radius: 4px;
+    background: var(--Green---Simantic, $Green-Primary);
+}
+
+.errorToast {
+    border-radius: 8px;
+    border: 1px solid var(--Red---Simantic, $Red-Primary);
+    background: var(--Red-Secondary---Simantic, $Red-Secondary-Simantic);
+}
+
+.errorToast .Toastify__toast-icon {
+    border-radius: 4px;
+    background: var(--Red---Simantic, $Red-Primary);
+}
+
+.infoToast {
+    border-radius: 8px;
+    border: 1px solid var(--Gray-20, $Gray-130);
+    background: var(--Gray-10, $Gray-10);
+}
+
+.infoToast .Toastify__toast-icon{
+    border-radius: 4px;
+    background: var(--Primary, $Button-Primary);
+}
+
+.customToast .Toastify__toast {
+    display: inline-flex;
+    min-width: 240px;
+    max-width: 360px;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 12px;
+}
+    
