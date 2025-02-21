@@ -67,7 +67,7 @@ const SignupPage = () => {
     try {
       setIsLoading(true);
       // const resp = await registerUser(formData.email, formData.password);
-      router.push("/onboarding/otp");
+      router.push("/onboarding/basic-details");
       localStorage.setItem("userEmail", formData.email);
     } catch (error) {
       setIsLoading(false);
